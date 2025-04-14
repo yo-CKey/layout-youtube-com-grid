@@ -1,0 +1,96 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    font-weight: 300;
+}
+
+h2{
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+/* section {
+    width: 900px;
+    height: 415px;
+    background-color: #F7F7F7;
+} */
+
+.container{
+    background-color: #F7F7F7; 
+    display: grid;
+    max-width: 900px;
+    grid-template-areas: "video-destaque propaganda"
+                         "video-destaque videos-sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 2fr;
+    gap: 15px;   
+    padding: 35px;                  
+}
+
+.video-destaque{
+    grid-area: video-destaque;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.videos-sugeridos{
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video{
+    display: flex;
+    
+}
+
+.video-destaque img{
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.video-destaque .titulo{
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+.video-destaque .vizu{
+    font-size: 14px;
+    margin: 5px 0px 5px ;
+}
+
+.video-destaque .descricao{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+.videos-sugeridos .video {
+    gap: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.videos-sugeridos .video .titulo{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.videos-sugeridos .video .info{
+    font-size: 11px;
+    
+}
+
+p {
+    margin-bottom: 5px;
+}
